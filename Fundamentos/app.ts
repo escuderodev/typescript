@@ -67,16 +67,26 @@
 //     console.log('Não possui complemento da movimentação então Não Publica')
 // }
 
-const typeUser = {
-    admin: 'você é um admin',
-    student: 'você é um estudante',
-    viewer: 'você é um espectador'
+// const typeUser = {
+//     admin: 'você é um admin',
+//     student: 'você é um estudante',
+//     viewer: 'você é um espectador'
+// }
+
+// function validateUser(user: string) {
+//     console.log(typeUser[user as keyof typeof typeUser])
+// }
+
+// const usuario = 'admin'
+
+// validateUser(usuario)
+
+// ==== estrutura de repetição ====
+// = calculadora =
+console.log('=== tabuada ===')
+const multiplicador: number = 4
+
+for(let i=0; i<11; i++) {
+    console.log(`${multiplicador} X ${i} = ${i * multiplicador}`)
 }
 
-function validateUser(user: string) {
-    console.log(typeUser[user as keyof typeof typeUser])
-}
-
-const usuario = 'admin'
-
-validateUser(usuario)
