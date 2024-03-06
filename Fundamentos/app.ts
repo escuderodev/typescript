@@ -82,11 +82,29 @@
 // validateUser(usuario)
 
 // ==== estrutura de repetição ====
-// = calculadora =
-console.log('=== tabuada ===')
-const multiplicador: number = 4
+// console.log('\n === for ===')
+// console.log('=== tabuada ===')
+// const multiplicador: number = 4
 
-for(let i=0; i<11; i++) {
-    console.log(`${multiplicador} X ${i} = ${i * multiplicador}`)
-}
+// for(let i=0; i<11; i++) {
+//     console.log(`${multiplicador} X ${i} = ${i * multiplicador}`)
+// }
 
+// console.log('\n === while ===')
+// let contador = 1
+// while(contador < 11) {
+//     console.log(contador)
+//     contador++
+// }
+
+// ===== array =====
+const numbers: number[] = [1,2,3,4]
+const strings: string[] = ['eduardo','carol','juan','alicia']
+
+console.log(numbers[1])
+console.log('Tamanho do array: ' + numbers.length)
+console.log('Numeros: ' + numbers)
+numbers.push(5)
+console.log('Numeros: ' + numbers)
+numbers.pop()
+console.log('Numeros: ' + numbers)
