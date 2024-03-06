@@ -101,10 +101,40 @@
 const numbers: number[] = [1,2,3,4]
 const strings: string[] = ['eduardo','carol','juan','alicia']
 
+// selecionando uma posição do array
 console.log(numbers[1])
+
+// verificando o tamanho de um array
 console.log('Tamanho do array: ' + numbers.length)
+
+// imprimindo o array original
 console.log('Numeros: ' + numbers)
+
+// adicionando elemento no array
 numbers.push(5)
 console.log('Numeros: ' + numbers)
+
+// removendo o último elemento do array
 numbers.pop()
 console.log('Numeros: ' + numbers)
+
+// procurando elemento dentro do array - obs: retorna o primeiro item do array que atenda a regra de pesquisa
+// const pesquisaNumero: number | undefined = numbers.find(num => num === 3)
+// console.log(pesquisaNumero)
+
+// foreach
+console.log('\n= foreach =')
+numbers.forEach(num => console.log('Número: ',num))
+
+console.log('\n= pesquisando numeros maiores que 2 =')
+numbers.forEach(num => {
+    if(num > 2) {
+        console.log(num)
+    }
+})
+
+// map
+console.log('\n= map =')
+numbers.map(num => console.log(num))
+
+// forEach e map são semelhantes e divergem em desempenho, porém quando for utilizar função assincrona, devemos utilizar o map
