@@ -12,3 +12,8 @@ const savingsAccount: SavingsAccount = new SavingsAccount('Carol', 54321)
 console.log(`Cliente: ${savingsAccount.name} | Conta: ${savingsAccount.accountNumber} | Saldo R$: ${savingsAccount.balance.toFixed(2)}`)
 savingsAccount.deposit(100)
 savingsAccount.withdraw(50)
+
+console.log('\n=== testando os métodos get com retorno ===')
+console.log(currentAccount.getName())
+console.log(currentAccount.getAccountNumber())
+console.log(currentAccount.getBalance())

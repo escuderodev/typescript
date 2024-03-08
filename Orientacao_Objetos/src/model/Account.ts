@@ -9,12 +9,12 @@ export abstract class Account {
 
     }
 
-    deposit = (value: number) => {
+    deposit = (value: number): void => {
         this.balance += value
         console.log(`Você depositou R$ ${value.toFixed(2)} e seu novo saldo é R$ ${this.balance.toFixed(2)}`)
     }
 
-    withdraw = (value: number) => {
+    withdraw = (value: number): void => {
         if(this.balance >= value) {
             this.balance -= value
             console.log(`Você sacou R$ ${value.toFixed(2)} e seu novo saldo é R$ ${this.balance.toFixed(2)}`)
@@ -23,8 +23,16 @@ export abstract class Account {
         }
     }
 
-    getBalence = () => {
-        console.log(this.balance)
+    getName = (): string => {
+        return this.name
+    }
+
+    getAccountNumber = (): number => {
+        return this.accountNumber
+    }
+
+    getBalance = (): number => {
+        return this.balance
     }
 }
 
