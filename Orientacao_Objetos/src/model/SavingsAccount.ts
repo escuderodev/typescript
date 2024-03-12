@@ -8,7 +8,7 @@ export class SavingsAccount extends Account {
     }
 
     deposit = (value: number): void => {
-        this.balance += value + ((value * this.yieldPercentage) / 100)
-        console.log(`Você depositou R$ ${value.toFixed(2)} e seu novo saldo é R$ ${this.balance.toFixed(2)}`)
+        this.setBalance(this.getBalance() + (value + ((value * this.yieldPercentage) / 100)))
+        console.log(`Você depositou R$ ${value.toFixed(2)} e seu novo saldo é R$ ${this.getBalance().toFixed(2)}`)
     }
 }
