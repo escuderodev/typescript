@@ -1,6 +1,6 @@
 export abstract class Account {
-    name: string
-    accountNumber: number
+    private name: string
+    private accountNumber: number
     balance: number = 0
 
     constructor(name: string, accountNumber: number) {
@@ -27,12 +27,24 @@ export abstract class Account {
         return this.name
     }
 
+    setName = (name: string) => {
+        this.name = name
+    }
+
     getAccountNumber = (): number => {
         return this.accountNumber
     }
 
+    setAccountNumber = (accountNumber: number) => {
+        this.accountNumber = accountNumber
+    }
+
     getBalance = (): number => {
         return this.balance
+    }
+
+    setBalence = (balance:  number) => {
+        this.balance = balance
     }
 }
 
