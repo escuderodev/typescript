@@ -1,4 +1,4 @@
-import { DioAccount } from "./class/DioAccount";
+import { DioAccount } from "./DioAccount";
 
 export class SavingsAccount extends DioAccount {
     constructor(name: string, accountNumber: number) {

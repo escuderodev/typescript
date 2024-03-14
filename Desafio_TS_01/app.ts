@@ -1,4 +1,4 @@
-import { SavingsAccount } from './SavingsAccount'
+import { SavingsAccount } from './class/SavingsAccount'
 import { CompanyAccount } from './class/CompanyAccount'
 import { PeopleAccount } from './class/PeopleAccount'
 
