@@ -41,4 +41,9 @@ export class CustomerInDataBase implements CustomerRepository {
             'document': customer.getDocument().getValue()
         })
     }
+
+    async delete(id: Uuid): Promise<void> {
+        await this.connection('customers').where({'id': id.getValue()}).delete()
+    }
+
 }

@@ -3,6 +3,9 @@ import { Uuid } from "../../model/Uuid";
 import { CustomerRepository } from "../../repository/CustomerRepository";
 
 export class CustomerInMemory implements CustomerRepository {
+    delete(id: Uuid): Promise<void> {
+        throw new Error("Method not implemented.");
+    }
     getById(id: Uuid): Promise<Customer> {
         throw new Error("Method not implemented.");
     }
