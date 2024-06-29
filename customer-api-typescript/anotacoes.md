@@ -32,4 +32,12 @@
 - em App.ts, exportar server
 - em src, criar aquivo index.ts para ser o ponto de entrada da aplicação
 - em index.ts, importar App.ts, pegar o server e definir a posta a ser escutada
+- testar api
+- repetir os passo abaixo para o outros endpoint's
+    - em CustomerRepository, criar metodo desejado
+    - em CustomerInMemory, implementar o metodo criado em CustomerRepository
+    - em controller, criar CustomerListController.ts
+    - em router.ts, criar rota/endpoint para o método criado em controller
+- testar api
+- mudar a base de dados para outro banco, tipo MySql
 - 
