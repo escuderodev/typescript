@@ -16,4 +16,12 @@
 - em Uuid.ts, importar validate => import { validate as validateUuid } from "uuid" para realizar validação dos uuid
 - após implementar Uuid, devemos alterar o atributo id de customer para o tipo Uuid
 - para criar nossos document's, vamos antes criar a classe DocumentFactory.ts
+- em src, criar pasta controller
+- em controller, criar CustomerCreateController.ts
+- em CustomerCreate, importar express
+- criar pasta repository
+- em repository, criar CustomerRepository.ts
+- criar pasta infra
+- em infra, criar pasta dataBase
+- em dataBase, criar arquivo CustomerInMemory.ts para guardar um banco de dados em memoria
 - 
