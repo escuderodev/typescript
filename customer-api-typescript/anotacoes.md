@@ -24,4 +24,12 @@
 - criar pasta infra
 - em infra, criar pasta dataBase
 - em dataBase, criar arquivo CustomerInMemory.ts para guardar um banco de dados em memoria
+- em src, criar App.ts para ser o nosso server
+- em src, criar routes.ts para conter as nossas rotas/endpoints
+- em App.ts, instanciar o express
+- em App.ts, definir json como o protocolo de envio de dados
+- em App.ts, importar router e colocá-lo em uso
+- em App.ts, exportar server
+- em src, criar aquivo index.ts para ser o ponto de entrada da aplicação
+- em index.ts, importar App.ts, pegar o server e definir a posta a ser escutada
 - 
