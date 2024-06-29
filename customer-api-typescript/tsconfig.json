@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+
+    // project
+    "incremental": true,
+
+    // language and environment
+    "target": "ES2020",
+
+    // modules
+    "module": "CommonJS",
+
+    // outside path build
+    "outDir": "./",
+
+    // interop constraints
+    "esModuleInterop": true,
+
+    // type checking
+    "strict": true,
+  }, 
+  "include": [
+    "src"
+  ]
+}
