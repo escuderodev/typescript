@@ -29,4 +29,5 @@ export class Customer {
     public getDocument(): Document {
         return this.document
     }
+
 }

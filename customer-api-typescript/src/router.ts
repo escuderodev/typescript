@@ -5,6 +5,7 @@ import { CustomerCreateController } from "./controller/CustomerCreateController"
 import { CustomerInDataBase } from "./infra/dataBase/CustomerInDataBase"
 import { CustomerGetByIdController } from "./controller/CustomerGetByIdController"
 import { CustomerDeleteController } from "./controller/CustomerDeleteController"
+import { CustomerUpdateController } from "./controller/CustomerUpdateController"
 
 const router = Router()
 
@@ -15,6 +16,7 @@ const repository = new CustomerInDataBase()
 const customerList = new CustomerListController(repository)
 const customerById = new CustomerGetByIdController(repository)
 const customerCreate = new CustomerCreateController(repository)
+const customerUpdate = new CustomerUpdateController(repository)
 const customerDelete = new CustomerDeleteController(repository)
 
 router.get("/customer", (req: Request, res: Response) => {
@@ -27,6 +29,10 @@ router.get("/customer/:id", (req: Request, res: Response) => {
 
 router.post("/customer", (req: Request, res: Response) => {
     customerCreate.execute(req, res)
+})
+
+router.put("/customer/:id", (req: Request, res: Response) => {
+    customerUpdate.execute(req, res)
 })
 
 router.delete("/customer/:id", (req: Request, res: Response) => {

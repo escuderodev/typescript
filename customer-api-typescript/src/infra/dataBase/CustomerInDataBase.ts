@@ -3,6 +3,7 @@ import { Customer } from "../../model/Customer"
 import { CustomerRepository } from "../../repository/CustomerRepository"
 import { development } from "./KnexConfig"
 import { Uuid } from "../../model/Uuid"
+import { CustomerDTO } from "../../model/CustomerDTO"
 
 export class CustomerInDataBase implements CustomerRepository {
 
@@ -40,6 +41,14 @@ export class CustomerInDataBase implements CustomerRepository {
             'name': customer.getName(),
             'document': customer.getDocument().getValue()
         })
+    }
+
+    async update(id: Uuid, customerDTO: CustomerDTO): Promise<Customer> {
+        await this.connection('customers').where({'id': id.getValue()}).update({
+            'name': customerDTO.name,
+            'document': customerDTO.document
+        })
+        return await this.getById(id)
     }
 
     async delete(id: Uuid): Promise<void> {
