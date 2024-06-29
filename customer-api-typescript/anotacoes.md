@@ -40,4 +40,15 @@
     - em router.ts, criar rota/endpoint para o método criado em controller
 - testar api
 - mudar a base de dados para outro banco, tipo MySql
+- instalar knex => npm i knex @types/knex
+- em infra/dataBase, criar CustomerInDataBase.ts
+- em infra/dataBase, criar KnexConfig.ts
+- instalar mysql => npm i mysql2
+- instalar dotenv => npm i dotenv
+- na raiz do projeto, criar arquivo .env e definir as variáveis de ambiente
+- criar na classe Customer os gets
+- criar na classe Uuid o metodo getValue()
+- em CustomerInDataBase.ts, implementar os métodos necessários
+- em MySql, criar Banco de Dados e Tabela
+- para alterar o banco de dados, basta, em router.ts, alterar a variável repository para => let repository = new CustomerInDataBase()
 - 

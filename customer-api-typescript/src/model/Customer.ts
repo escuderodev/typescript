@@ -17,4 +17,16 @@ export class Customer {
         const documentInstance = DocumentFactory.createDocument(document)
         return new Customer(name, documentInstance, id)
     }
+
+    public getId(): Uuid {
+        return this.id
+    }
+
+    public getName(): string {
+        return this.name
+    }
+
+    public getDocument(): Document {
+        return this.document
+    }
 }
