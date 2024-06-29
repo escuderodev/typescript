@@ -1,7 +1,11 @@
 import { Customer } from "../../model/Customer";
+import { Uuid } from "../../model/Uuid";
 import { CustomerRepository } from "../../repository/CustomerRepository";
 
 export class CustomerInMemory implements CustomerRepository {
+    getById(id: Uuid): Promise<Customer> {
+        throw new Error("Method not implemented.");
+    }
 
     private customerCollection: Array<Customer> = []
 

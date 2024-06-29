@@ -3,6 +3,7 @@ import { CustomerInMemory } from "./infra/dataBase/CustomerInMemory"
 import { CustomerListController } from "./controller/CustomerListController"
 import { CustomerCreateController } from "./controller/CustomerCreateController"
 import { CustomerInDataBase } from "./infra/dataBase/CustomerInDataBase"
+import { CustomerGetByIdController } from "./controller/CustomerGetByIdController"
 
 const router = Router()
 
@@ -11,10 +12,15 @@ const router = Router()
 const repository = new CustomerInDataBase()
 
 const customerList = new CustomerListController(repository)
+const customerById = new CustomerGetByIdController(repository)
 const customerCreate = new CustomerCreateController(repository)
 
 router.get("/customer", (req: Request, res: Response) => {
     customerList.execute(req, res)
+})
+
+router.get("/customer/:id", (req: Request, res: Response) => {
+    customerById.execute(req, res)
 })
 
 router.post("/customer", (req: Request, res: Response) => {
