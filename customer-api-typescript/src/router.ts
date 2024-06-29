@@ -5,7 +5,11 @@ import { CustomerCreateController } from "./controller/CustomerCreateController"
 import { CustomerInDataBase } from "./infra/dataBase/CustomerInDataBase"
 
 const router = Router()
+
+// select database
+// const repository = new CustomerInMemory()
 const repository = new CustomerInDataBase()
+
 const customerList = new CustomerListController(repository)
 const customerCreate = new CustomerCreateController(repository)
 
@@ -18,3 +22,5 @@ router.post("/customer", (req: Request, res: Response) => {
 })
 
 export { router }
+
+// Paramos na aula: https://www.youtube.com/watch?v=SO0hjalCVkI&list=PLrnHpYM1USWz9JMdtsbpPDYDNUuP_cpK_&index=4&ab_channel=andrevitor103
