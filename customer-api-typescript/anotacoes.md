@@ -3,7 +3,7 @@
 - iniciar projeto => npm init -y
 - instalar o typescript e seu type => npm i typescript @types/typescript
 - instalar express e seu type => npm i express @types/express
-- instalar ts-node => npm i ts-node
+- instalar ts-node => npm i ts-node ts-node-dev
 - criar arquivo de ocnfiguração do typescript => npx tsc --init
 - criar pasta src
 - em src, criar pasta model
