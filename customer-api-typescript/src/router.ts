@@ -29,4 +29,4 @@ router.post("/customer", (req: Request, res: Response) => {
 
 export { router }
 
-// Paramos na aula: https://www.youtube.com/watch?v=SO0hjalCVkI&list=PLrnHpYM1USWz9JMdtsbpPDYDNUuP_cpK_&index=4&ab_channel=andrevitor103
+// Paramos na aula: https://www.youtube.com/watch?v=6l4uXfxb3Jc&list=PLrnHpYM1USWz9JMdtsbpPDYDNUuP_cpK_&index=5&ab_channel=andrevitor103
