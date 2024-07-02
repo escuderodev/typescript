@@ -4,8 +4,9 @@
  * @type { Object.<string, import("knex").Knex.Config> }
  */
 
-import Dotenv from "dotenv"
-Dotenv.config({path: 'env/dev.env'})
+// import Dotenv from "dotenv"
+// Dotenv.config({path: 'env/dev.env'})
+import "dotenv/config"
 
 console.log(`Conectado à Base de Dados: ${process.env.DB_DATABASE}`)
 

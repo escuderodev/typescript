@@ -1,5 +1,4 @@
 import { App } from "./app"
-import Dotenv from "dotenv"
-Dotenv.config({path: 'env/dev.env'})
+import "dotenv/config"
 
 new App().getServer().listen(process.env.PORT)

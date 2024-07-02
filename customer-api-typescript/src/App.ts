@@ -1,7 +1,6 @@
 import express, { json } from 'express'
 import { router } from './router'
-import Dotenv from "dotenv"
-Dotenv.config({path: 'env/dev.env'})
+import "dotenv/config"
 
 export class App {
     private server: express.Application
