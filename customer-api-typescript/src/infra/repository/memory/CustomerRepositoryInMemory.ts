@@ -2,7 +2,6 @@ import { Customer } from "../../../model/Customer";
 import { Uuid } from "../../../model/Uuid";
 import { CustomerRepository } from "../../../model/repository/CustomerRepository";
 
-
 export class CustomerRepositoryInMemory implements CustomerRepository {
     private customerCollection: Array<Customer> = []
 

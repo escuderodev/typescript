@@ -1,7 +1,6 @@
 import { Request, Response } from "express"
 import { CustomerGetByIdService } from "../services/CustomerGetByIdService"
 
-
 export class CustomerById {
 
     constructor(readonly service: CustomerGetByIdService) {
@@ -9,7 +8,12 @@ export class CustomerById {
 
     async execute(request: Request, response: Response) {
         let id: string = request.params.id
-        const customer = await this.service.execute(id)
-        response.status(200).json({customer})
+        
+        try {
+            const customer = await this.service.execute(id)
+            response.status(200).json({customer})
+        } catch (error) {
+            response.status(200).json({message: `Customer id ${id} not found!`})
+        }
     }
 }

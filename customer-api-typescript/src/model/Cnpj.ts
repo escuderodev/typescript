@@ -1,6 +1,5 @@
 import { Document } from "./Document";
 
-
 export class Cnpj implements Document {
 
     private value: string

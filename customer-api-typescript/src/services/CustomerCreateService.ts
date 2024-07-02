@@ -1,8 +1,6 @@
 import { Customer } from "../model/Customer";
 import { CustomerRepository } from "../model/repository/CustomerRepository";
 
-
-
 export class CustomerCreateService {
     constructor(readonly repository: CustomerRepository) {
     }

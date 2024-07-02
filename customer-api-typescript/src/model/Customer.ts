@@ -2,7 +2,6 @@ import { Document } from "./Document"
 import { DocumentFactory } from "./DocumentFactory"
 import { Uuid } from "./Uuid"
 
-
 export class Customer {
     private id: Uuid
     private name: string

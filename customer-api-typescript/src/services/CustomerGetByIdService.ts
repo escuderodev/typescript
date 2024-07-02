@@ -1,8 +1,6 @@
 import { Uuid } from "../model/Uuid"
 import { CustomerRepository } from "../model/repository/CustomerRepository"
 
-
-
 export class CustomerGetByIdService {
     
     constructor(readonly repository: CustomerRepository) {

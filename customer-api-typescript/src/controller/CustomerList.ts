@@ -1,7 +1,6 @@
 import { Request, Response } from "express"
 import { CustomerGetAllService } from "../services/CustomerGetAllService"
 
-
 export class CustomerList {
 
     constructor(readonly service: CustomerGetAllService) {

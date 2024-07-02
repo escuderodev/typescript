@@ -1,6 +1,5 @@
 import { Document } from "./Document";
 
-
 export class Cpf implements Document {
 
     private value: string

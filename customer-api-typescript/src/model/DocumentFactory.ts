@@ -2,7 +2,6 @@ import { Cnpj } from "./Cnpj";
 import { Cpf } from "./Cpf";
 import { Document } from "./Document";
 
-
 export class DocumentFactory {
     static create(value: string): Document {
         if (Cpf.isValid(value)) {
