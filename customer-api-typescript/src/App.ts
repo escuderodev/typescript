@@ -1,5 +1,7 @@
-import express, { json } from "express";
-import { router } from "./router";
+import express, { json } from 'express'
+import { router } from './router'
+import Dotenv from "dotenv"
+Dotenv.config({path: 'env/dev.env'})
 
 export class App {
     private server: express.Application
@@ -11,6 +13,7 @@ export class App {
     }
 
     public getServer(): express.Application {
+        console.log(`Server is running on http://localhost:${process.env.PORT}`)
         return this.server
     }
 }

@@ -4,9 +4,10 @@
  * @type { Object.<string, import("knex").Knex.Config> }
  */
 
-import 'dotenv/config'
+import Dotenv from "dotenv"
+Dotenv.config({path: 'env/dev.env'})
 
-console.log(`Conectado ao DataBase: ${process.env.DB_DATABASE}`)
+console.log(`Conectado à Base de Dados: ${process.env.DB_DATABASE}`)
 
 export const development = {
     client: 'mysql',

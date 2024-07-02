@@ -1,24 +1,25 @@
 {
   "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig to read more about this file */
 
-    // project
-    "incremental": true,
+    /* Projects */
+    "incremental": true,                              /* Save .tsbuildinfo files to allow for incremental compilation of projects. */
 
-    // language and environment
-    "target": "ES2020",
+    /* Language and Environment */
+    "target": "ES2020",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
 
-    // modules
-    "module": "CommonJS",
+    /* Modules */
+    "module": "commonjs",                                /* Specify what module code is generated. */
 
-    // outside path build
-    "outDir": "./",
+    /* Emit */
+    "outDir": "./",                                   /* Specify an output folder for all emitted files. */
 
-    // interop constraints
-    "esModuleInterop": true,
+    /* Interop Constraints */
+    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
 
-    // type checking
-    "strict": true,
-  }, 
+    /* Type Checking */
+    "strict": true                    
+  },
   "include": [
     "src"
   ]

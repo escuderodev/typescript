@@ -1,45 +1,56 @@
-import { Request, Response, Router } from "express"
-// import { CustomerInMemory } from "./infra/dataBase/CustomerInMemory"
-import { CustomerListController } from "./controller/CustomerListController"
-import { CustomerCreateController } from "./controller/CustomerCreateController"
-import { CustomerInDataBase } from "./infra/dataBase/CustomerInDataBase"
-import { CustomerGetByIdController } from "./controller/CustomerGetByIdController"
-import { CustomerDeleteController } from "./controller/CustomerDeleteController"
-import { CustomerUpdateController } from "./controller/CustomerUpdateController"
+import { Request, Response, Router } from 'express'
+import { CustomerRepositoryInMemory } from './infra/repository/memory/CustomerRepositoryInMemory'
+import { CustomerCreate } from './controller/CustomerCreate'
+import { CustomerList } from './controller/CustomerList'
+import { CustomerRepositoryDatabase } from './infra/repository/database/CustomerRepositoryDatabase'
+import { CustomerRepository } from './model/repository/CustomerRepository'
+import { CustomerById } from './controller/CustomerGetById'
+import { CustomerRemoveById } from './controller/CustomerRemoveById'
+import { CustomerUpdateById } from './controller/CustomerUpdateById'
+import { CustomerCreateService } from './services/CustomerCreateService'
+import { CustomerGetByIdService } from './services/CustomerGetByIdService'
+import { CustomerGetAllService } from './services/CustomerGetAllService'
+import { CustomerRemoveByIdService } from './services/CustomerRemoveByIdService'
+import { CustomerUpdateByIdService } from './services/CustomerUpdateByIdService'
 
 const router = Router()
 
-// select database
-// const repository = new CustomerInMemory()
-const repository = new CustomerInDataBase()
+// const repository = new CustomerRepositoryInMemory()
+const repository = new CustomerRepositoryDatabase()
 
-const customerList = new CustomerListController(repository)
-const customerById = new CustomerGetByIdController(repository)
-const customerCreate = new CustomerCreateController(repository)
-const customerUpdate = new CustomerUpdateController(repository)
-const customerDelete = new CustomerDeleteController(repository)
+const customerCreateService = new CustomerCreateService(repository)
+const customerCreate = new CustomerCreate(customerCreateService)
 
-router.get("/customer", (req: Request, res: Response) => {
-    customerList.execute(req, res)
+const customerByIdService = new CustomerGetByIdService(repository)
+const customerById = new CustomerById(customerByIdService)
+
+const customerGetAllService = new CustomerGetAllService(repository)
+const customerList = new CustomerList(customerGetAllService)
+
+const customerRemoveByIdService = new CustomerRemoveByIdService(repository)
+const customerRemoveById = new CustomerRemoveById(customerRemoveByIdService)
+
+const customerUpdateByIdService = new CustomerUpdateByIdService(repository)
+const customerUpdateById = new CustomerUpdateById(customerUpdateByIdService)
+
+router.post('/customer', (request: Request, response: Response) => {
+    customerCreate.execute(request, response)
 })
 
-router.get("/customer/:id", (req: Request, res: Response) => {
-    customerById.execute(req, res)
+router.get('/customer', (request: Request, response: Response) => {
+    customerList.execute(request, response)
 })
 
-router.post("/customer", (req: Request, res: Response) => {
-    customerCreate.execute(req, res)
+router.get('/customer/:id', (request: Request, response: Response) => {
+    customerById.execute(request, response)
 })
 
-router.put("/customer/:id", (req: Request, res: Response) => {
-    customerUpdate.execute(req, res)
+router.delete('/customer/:id', (request: Request, response: Response) => {
+    customerRemoveById.execute(request, response)
 })
 
-router.delete("/customer/:id", (req: Request, res: Response) => {
-    customerDelete.execute(req, res)
+router.put('/customer/:id', (request: Request, response: Response) => {
+    customerUpdateById.execute(request, response)
 })
-
 
 export { router }
-
-// Paramos na aula: https://www.youtube.com/watch?v=6l4uXfxb3Jc&list=PLrnHpYM1USWz9JMdtsbpPDYDNUuP_cpK_&index=5&ab_channel=andrevitor103
