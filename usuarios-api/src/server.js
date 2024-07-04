@@ -15,11 +15,7 @@ console.log(`Server is running on http://localhost:${PORT}`)
 
 // criar usuário
 app.post("/usuarios", (req, res) => {
-    const usuario = {
-        nome: req.body.nome,
-        email: req.body.email,
-        password: req.body.password
-    }
+    const usuario = req.body
     users.push(usuario)
     res.status(200).json({usuario})
 })
@@ -31,6 +27,10 @@ app.get("/usuarios", (req, res) => {
 })
 
 // listar apenas um usuário
+app.get("/usuarios/:id", (req, res) => {
+    const usuario = users.filter(user => users.find(u => u.id === req.params.id))
+    res.status(200).json({usuario})
+})
 
 // atualizar usuário
 
