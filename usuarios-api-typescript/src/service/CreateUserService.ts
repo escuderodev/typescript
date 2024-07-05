@@ -1,18 +1,14 @@
-import { Request, Response } from "express"
-import { PrismaClient } from "@prisma/client"
+import { Request } from "express"
+// import { PrismaClient } from "@prisma/client"
+import { CreateUserReposiroty } from "../repository/CreateUserReposiroty"
 
-const prisma = new PrismaClient()
+// const prisma = new PrismaClient()
 
 export class CreateUserService  {
 
     async execute(req: Request) {
-        const user = await prisma.user.create({
-            data: {
-                name: req.body.email,
-                email: req.body.email,
-                age: req.body.age
-            }
-        })
-        return user
+
+        const createUserRepository = new CreateUserReposiroty()
+        return createUserRepository.save(req)
     }
 }
