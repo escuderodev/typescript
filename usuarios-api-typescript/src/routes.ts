@@ -1,66 +1,28 @@
-import { Request, Response, Router } from "express"
+import { Router } from "express"
 import { PrismaClient } from "@prisma/client"
+import { createUser } from "./controller/CreateUserController"
+import { getAllUsers } from "./controller/GetAllUsersController"
+import { getUserById } from "./controller/GetUserByIdController"
+import { updateUser } from "./controller/UpdateUserController"
+import { deleteUser } from "./controller/DeleteUserController"
 
 const prisma = new PrismaClient()
 
 const router = Router()
 
 // criar usuário
-router.post("/usuarios", async (req: Request, res: Response) => {
-
-    await prisma.user.create({
-        data: {
-            name: req.body.name,
-            email: req.body.email,
-            age: req.body.age
-        }
-    })
-    const usuario = req.body
-    res.status(201).json(usuario)
-})
-
+router.post("/usuarios", createUser)
 
 // listar todos os usuários
-router.get("/usuarios", async (req: Request, res: Response) => {
-    const userList = await prisma.user.findMany()
-    res.status(200).json({userList})
-})
+router.get("/usuarios", getAllUsers)
 
 // listar apenas um usuário
-router.get("/usuarios/:id", async (req: Request, res: Response) => {
-    const usuario = await prisma.user.findUnique({
-        where: {
-          id: req.params.id,
-        },
-      })
-    res.status(200).json({usuario})
-})
+router.get("/usuarios/:id", getUserById)
 
 // atualizar usuário
-router.put("/usuarios/:id", async (req: Request, res: Response) => {
-
-    await prisma.user.update({
-        where: {
-            id: req.params.id
-        },
-        data: {
-            name: req.body.name,
-            email: req.body.email,
-            age: req.body.age
-        }
-    })
-    const usuario = req.body
-    res.status(201).json(usuario)
-})
+router.put("/usuarios/:id", updateUser)
 
 // deletar usuário
-router.delete("/usuarios/:id", async (req: Request, res: Response) => {
-    await prisma.user.delete({
-        where: {
-            id: req.params.id
-        }
-    })
-    res.status(200).json({message: 'Usuário deletado com sucesso!'})
-})
+router.delete("/usuarios/:id", deleteUser)
 
 export {router}
