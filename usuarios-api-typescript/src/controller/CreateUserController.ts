@@ -13,5 +13,5 @@ export const createUser = async (req: Request, res: Response) => {
         }
     })
     const usuario = req.body
-    res.status(201).json(usuario)
+    return res.status(201).json(usuario)
 }
