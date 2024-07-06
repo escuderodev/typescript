@@ -1,11 +1,11 @@
 import { Request } from "express"
-import { DeleteUserReposiroty } from "../repository/DeleteUserRepository"
+import { UserReposiroty } from "../repository/UserReposiroty"
 
 export class DeleteUserService  {
 
     async execute(req: Request) {
 
-        const deleteUserRepository = new DeleteUserReposiroty()
-        return deleteUserRepository.delete(req)
+        const userReposiroty = new UserReposiroty()
+        return userReposiroty.delete(req)
     }
 }

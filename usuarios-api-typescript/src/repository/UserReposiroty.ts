@@ -3,7 +3,7 @@ import { PrismaClient } from "@prisma/client"
 
 const prisma = new PrismaClient()
 
-class CreateUserReposiroty {
+export class UserReposiroty {
     async save(req: Request) {
         const user = await prisma.user.create({
             data: {
@@ -14,6 +14,23 @@ class CreateUserReposiroty {
         })
         return user
     }
+
+    async delete(req: Request) {
+        await prisma.user.delete({
+            where: {
+                id: req.params.id
+            }
+        })
+    }
+
+    getById(id: string) {
+
+    }
+
+    // update(id: string, user: User) {
+
+    // }
+
 }
 
-export { CreateUserReposiroty }
+// export { UserReposiroty }
