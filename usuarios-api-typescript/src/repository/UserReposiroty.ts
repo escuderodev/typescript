@@ -23,14 +23,29 @@ export class UserReposiroty {
         })
     }
 
-    getById(id: string) {
-
+    async getAll() {
+        return await prisma.user.findMany()
     }
 
-    // update(id: string, user: User) {
+    async getById(req: Request) {
+        const userSearch = await prisma.user.findUnique({
+            where: {
+              id: req.params.id,
+            },
+          })
+          return userSearch
+    }
 
-    // }
-
+    async update(req: Request) {
+        return await prisma.user.update({
+            where: {
+                id: req.params.id
+            },
+            data: {
+                name: req.body.name,
+                email: req.body.email,
+                age: req.body.age
+            }
+        })
+    }
 }
-
-// export { UserReposiroty }

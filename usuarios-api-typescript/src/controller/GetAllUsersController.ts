@@ -1,10 +1,9 @@
 import { Request, Response } from "express"
-import { PrismaClient } from "@prisma/client"
-
-const prisma = new PrismaClient()
+import { GetAllUsersService } from "../service/GetAllUsersService"
 
 export const getAllUsers = async (req: Request, res: Response) => {
 
-    const userList = await prisma.user.findMany()
+    const getAllUsersService = new GetAllUsersService()
+    const userList = await getAllUsersService.execute(req)
     return res.status(200).json({userList})
 }

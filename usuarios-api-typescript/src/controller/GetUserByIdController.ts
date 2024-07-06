@@ -1,14 +1,9 @@
 import { Request, Response } from "express"
-import { PrismaClient } from "@prisma/client"
-
-const prisma = new PrismaClient()
+import { GetUserByIdService } from "../service/GetUserByIdService"
 
 export const getUserById = async (req: Request, res: Response) => {
 
-    const usuario = await prisma.user.findUnique({
-        where: {
-          id: req.params.id,
-        },
-      })
-    return res.status(200).json({usuario})
+  const getUserByIdService = new GetUserByIdService()
+  const user = await getUserByIdService.execute(req)
+  return res.status(200).json({user})
 }
