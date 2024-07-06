@@ -37,6 +37,7 @@ export class UserReposiroty {
     }
 
     async update(req: Request) {
+        console.log(req.params.id)
         return await prisma.user.update({
             where: {
                 id: req.params.id
