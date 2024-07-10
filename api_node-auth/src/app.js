@@ -20,9 +20,40 @@ mongoose.connect(`mongodb+srv://${dbUser}:${dbPass}@api-node-auth.9inpulb.mongod
     })
 }).catch((error) => console.log(error))
 
+function checkToken(req, res, next) {
+    const tokenHeader = req.headers['authorization']
+    const token = tokenHeader && tokenHeader.split(" ")[1]
+
+    if(!token) {
+        return res.status(401).json({message: "Access denied!"})
+    }
+
+    try {
+        const secret = process.env.SECRET
+        jwt.verify(token, secret)
+        next()
+    } catch (error) {
+        res.status(400).json({message: "Token is not valid!"})
+    }
+}
+
 // open route
 app.get("/", (req, res) => {
-    res.status(200).json({message: 'Bem vindo a minha api...'})
+    res.status(200).json({message: "Bem vindo a minha api..."})
+})
+
+// private route
+app.get("/users/:id", checkToken, async (req, res) => {
+    const id = req.params.id;
+
+    // check if user exists
+    const user = await User.findById(id, "-password");
+  
+    if (!user) {
+      return res.status(404).json({ msg: "Usuário não encontrado!" });
+    }
+  
+    res.status(200).json({ user });
 })
 
 // authenticate user
