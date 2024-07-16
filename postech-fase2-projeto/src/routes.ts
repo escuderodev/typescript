@@ -18,7 +18,7 @@ const loginService = new LoginService()
 router.post("/login", login)
 
 // criar usuário
-router.post("/users", loginService.checkToken, createUser)
+router.post("/users", createUser)
 
 // listar todos os usuários
 router.get("/users", getAllUsers)
