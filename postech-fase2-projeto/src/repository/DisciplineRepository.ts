@@ -1,85 +1,57 @@
-// import { Request } from "express"
-// import { PrismaClient } from "@prisma/client"
+import { Request } from "express"
+import { PrismaClient } from "@prisma/client"
 
-// const prisma = new PrismaClient()
+const prisma = new PrismaClient()
 
-// export class DisciplineRepository {
-//     async save(req: Request) {
-//         const discipline = await prisma.discipline.create({
-//             data: {
-//                 name: req.body.name,
-//                 email: req.body.email,
-//                 password: passwordHash
-//             },
-//             select: {
-//                 id: true,
-//                 name: true,
-//                 email: true,
-//                 password: false
-//             }
-//         })
-//         return user
-//     }
+export class DisciplineRepository {
+    async save(title: string) {
 
-//     async getAll() {
-//         return await prisma.user.findMany({
-//             select: {
-//                 id: true,
-//                 name: true,
-//                 email: true,
-//                 password: false
-//             }
-//         })
-//     }
+        const discipline = await prisma.discipline.create({
+            data: {
+                title: title
+            },
+        })
+        return discipline
+    }
 
-//     async getById(req: Request) {
-//         const userSearch = await prisma.user.findUnique({
-//             where: {
-//               id: req.params.id,
-//             },
-//             select: {
-//                 id: true,
-//                 name: true,
-//                 email: true,
-//                 password: false
-//             }
-//           })
-//           return userSearch
-//     }
+    async getAll() {
+        return await prisma.discipline.findMany()
+    }
 
-//     async getByEmail(email: string) {
-//         const userSearch = await prisma.user.findUnique({
-//             where: {
-//               email: email,
-//             }
-//           })
-//           return userSearch
-//     }
+    async getById(req: Request) {
+        const discipline = await prisma.discipline.findUnique({
+            where: {
+              id: req.params.id,
+            }
+          })
+          return discipline
+    }
 
-//     async update(req: Request, passwordHash: string) {
-//         return await prisma.user.update({
-//             where: {
-//                 id: req.params.id
-//             },
-//             data: {
-//                 name: req.body.name,
-//                 email: req.body.email,
-//                 password: passwordHash
-//             },
-//             select: {
-//                 id: true,
-//                 name: true,
-//                 email: true,
-//                 password: false
-//             }
-//         })
-//     }
+    async getByTitle(title: string) {
+        const disciplineTitle = await prisma.discipline.findUnique({
+            where: {
+              title: title,
+            }
+          })
+          return disciplineTitle
+    }
 
-//     async delete(req: Request) {
-//         await prisma.user.delete({
-//             where: {
-//                 id: req.params.id
-//             }
-//         })
-//     }
-// }
+    async update(req: Request) {
+        return await prisma.discipline.update({
+            where: {
+                id: req.params.id
+            },
+            data: {
+                title: req.body.title
+            }
+        })
+    }
+
+    async delete(req: Request) {
+        await prisma.discipline.delete({
+            where: {
+                id: req.params.id
+            }
+        })
+    }
+}

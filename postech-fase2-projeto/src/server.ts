@@ -1,6 +1,7 @@
 import express, { json } from "express"
 import "dotenv/config"
-import { router } from "./routes"
+import { userRouter } from "./userRoutes"
+import { disciplineRouter } from "./disciplineRoutes"
 
 const app = express()
 
@@ -11,4 +12,5 @@ app.listen(PORT, () => {
 })
 
 app.use(json())
-app.use(router)
+app.use(userRouter)
+app.use(disciplineRouter)

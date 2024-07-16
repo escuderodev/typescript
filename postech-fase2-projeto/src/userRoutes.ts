@@ -10,26 +10,26 @@ import { LoginService } from "./service/User/LoginService"
 
 const prisma = new PrismaClient()
 
-const router = Router()
+const userRouter = Router()
 
 const loginService = new LoginService()
 
 //login
-router.post("/login", login)
+userRouter.post("/login", login)
 
 // criar usuário
-router.post("/users", createUser)
+userRouter.post("/users", createUser)
 
 // listar todos os usuários
-router.get("/users", getAllUsers)
+userRouter.get("/users", getAllUsers)
 
 // listar apenas um usuário
-router.get("/users/:id", getUserById)
+userRouter.get("/users/:id", getUserById)
 
 // atualizar usuário
-router.put("/users/:id", loginService.checkToken, updateUser)
+userRouter.put("/users/:id", loginService.checkToken, updateUser)
 
 // deletar usuário
-router.delete("/users/:id", loginService.checkToken, deleteUser)
+userRouter.delete("/users/:id", loginService.checkToken, deleteUser)
 
-export {router}
+export {userRouter}

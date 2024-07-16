@@ -30,7 +30,7 @@ export class CreateUserService  {
         const userExists = await userReposiroty.getByEmail(email)
 
         if(userExists) {
-            return res.status(422).json({message: "mail already registereed!"})
+            return res.status(422).json({message: "mail already registered!"})
         }
     
         // create password encoded
