@@ -1,7 +1,7 @@
 import express, { json } from "express"
 import "dotenv/config"
-import { userRouter } from "./userRoutes"
-import { disciplineRouter } from "./disciplineRoutes"
+import { userRouter } from "../src/routes/userRoutes"
+import { disciplineRouter } from "../src/routes/disciplineRoutes"
 
 const app = express()
 
