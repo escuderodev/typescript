@@ -1,12 +1,12 @@
 import { Router } from "express"
 import { PrismaClient } from "@prisma/client"
-import { createUser } from "./controller/User/CreateUserController"
-import { getAllUsers } from "./controller/User/GetAllUsersController"
-import { getUserById } from "./controller/User/GetUserByIdController"
-import { updateUser } from "./controller/User/UpdateUserController"
-import { deleteUser } from "./controller/User/DeleteUserController"
-import { login } from "./controller/User/LoginController"
-import { LoginService } from "./service/User/LoginService"
+import { createUser } from "../controller/User/CreateUserController"
+import { getAllUsers } from "../controller/User/GetAllUsersController"
+import { getUserById } from "../controller/User/GetUserByIdController"
+import { updateUser } from "../controller/User/UpdateUserController"
+import { deleteUser } from "../controller/User/DeleteUserController"
+import { login } from "../controller/User/LoginController"
+import { LoginService } from "../service/User/LoginService"
 
 const prisma = new PrismaClient()
 

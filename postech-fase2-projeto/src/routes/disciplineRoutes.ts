@@ -1,8 +1,8 @@
 import { Router } from "express"
 import { PrismaClient } from "@prisma/client"
-import { createDiscipline } from "./controller/Discipline/CreateDisciplineController"
-import { getAllDisciplines } from "./controller/Discipline/GetAllDisciplinesController"
-import { LoginService } from "./service/User/LoginService"
+import { createDiscipline } from "../controller/Discipline/CreateDisciplineController"
+import { getAllDisciplinies } from "../controller/Discipline/GetAllDiscipliniesController"
+import { LoginService } from "../service/User/LoginService"
 
 const prisma = new PrismaClient()
 
@@ -14,7 +14,7 @@ const loginService = new LoginService()
 disciplineRouter.post("/disciplines", loginService.checkToken , createDiscipline)
 
 // // listar todos os disciplina
-disciplineRouter.get("/disciplines", getAllDisciplines)
+disciplineRouter.get("/disciplines", getAllDisciplinies)
 
 // // listar apenas um disciplina
 // disciplineRouter.get("/disciplines/:id", getUserById)

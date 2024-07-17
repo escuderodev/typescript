@@ -1,7 +1,7 @@
 import { Request } from "express"
 import { DisciplineRepository } from "../../repository/DisciplineRepository"
 
-export class GetAllDisciplinesService {
+export class GetAllDiscipliniesService {
 
     async execute(req: Request) {
 
