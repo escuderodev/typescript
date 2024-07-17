@@ -20,16 +20,11 @@ model User {
   password  String
 }
 
-model Discipline {
-  id              String @id @default(auto()) @map("_id") @db.ObjectId
-  title           String @unique
-}
-
 model Post {
   id              String @id @default(auto()) @map("_id") @db.ObjectId
   title           String
   description     String
-  disciplineId    String @unique
+  discipline      String
 }
 
 // instalar prisma ORM => npm i -D prisma

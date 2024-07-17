@@ -1,11 +1,11 @@
 import { Request } from "express"
-import { UserReposiroty } from "../../repository/UserReposiroty"
+import { UserRepository } from "../../repository/UserRepository"
 
 export class GetAllUsersService  {
 
     async execute(req: Request) {
 
-        const userReposiroty = new UserReposiroty()
-        return await userReposiroty.getAll()
+        const userRepository = new UserRepository()
+        return await userRepository.getAll()
     }
 }

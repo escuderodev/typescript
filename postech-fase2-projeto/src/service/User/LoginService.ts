@@ -2,7 +2,7 @@ import { Request, Response } from "express"
 import jwt from "jsonwebtoken"
 import bcrypt from "bcrypt"
 import "dotenv/config"
-import { UserReposiroty } from "../../repository/UserReposiroty"
+import { UserRepository } from "../../repository/UserRepository"
 
 const secret = process.env.SECRET
 
@@ -10,11 +10,11 @@ export class LoginService {
 
     async execute(req: Request, res: Response) {
 
-        const userReposiroty = new UserReposiroty()
+        const userRepository = new UserRepository()
         const { email, password } = req.body
 
         // check if users not exists
-        const user = await userReposiroty.getByEmail(email)
+        const user = await userRepository.getByEmail(email)
         if(!user) {
             return res.status(422).json({message: "mail or password is not valid!"})
         }
