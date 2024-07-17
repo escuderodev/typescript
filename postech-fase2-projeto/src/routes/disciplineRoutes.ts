@@ -4,6 +4,7 @@ import { createDiscipline } from "../controller/Discipline/CreateDisciplineContr
 import { getAllDisciplinies } from "../controller/Discipline/GetAllDiscipliniesController"
 import { getDisciplineById } from "../controller/Discipline/GetDisciplineByIdController"
 import { updateDiscipline } from "../controller/Discipline/UpdateDisciplineController"
+import { deleteDiscipline } from "../controller/Discipline/DeteteDisciplineController"
 import { LoginService } from "../service/User/LoginService"
 
 const prisma = new PrismaClient()
@@ -25,6 +26,6 @@ disciplineRouter.get("/disciplinies/:id", getDisciplineById)
 disciplineRouter.put("/disciplinies/:id", loginService.checkToken, updateDiscipline)
 
 // // deletar disciplina
-// disciplineRouter.delete("/disciplinies/:id", loginService.checkToken, deleteUser)
+disciplineRouter.delete("/disciplinies/:id", loginService.checkToken, deleteDiscipline)
 
 export {disciplineRouter}
