@@ -36,13 +36,13 @@ export class DisciplineRepository {
           return disciplineTitle
     }
 
-    async update(req: Request) {
+    async update(req: Request, title: string) {
         return await prisma.discipline.update({
             where: {
                 id: req.params.id
             },
             data: {
-                title: req.body.title
+                title: title
             }
         })
     }

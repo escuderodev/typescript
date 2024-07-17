@@ -16,7 +16,7 @@ export class CreateDisciplineService {
             return res.status(422).json({message: 'title field is required!'})
         }
     
-        // check if users not exists
+        // check if discipline not exists
         const titleExists = await disciplineRepository.getByTitle(title)
 
         if(titleExists) {
