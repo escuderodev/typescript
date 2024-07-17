@@ -36,23 +36,23 @@ export class PostRepository {
           return post
     }
 
-    async update(req: Request) {
+    async update(id: string, title: string, description: string, discipline: string) {
         return await prisma.post.update({
             where: {
-                id: req.params.id
+                id: id
             },
             data: {
-                title: req.body.title,
-                description: req.body.description,
-                discipline: req.body.discipline
+                title: title,
+                description: description,
+                discipline: discipline
             }
         })
     }
 
-    async delete(req: Request) {
+    async delete(id: string) {
         await prisma.post.delete({
             where: {
-                id: req.params.id
+                id: id
             }
         })
     }
