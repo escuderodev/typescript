@@ -1,5 +1,5 @@
 import { Request, Response } from "express"
-import { CreatePostService } from "../../service/Post/CReatePostService"
+import { CreatePostService } from "../../service/Post/CreatePostService"
 
 export const createPost = async (req: Request, res: Response) => {
 
