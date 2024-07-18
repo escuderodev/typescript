@@ -1,11 +1,11 @@
-// import { Request } from "express"
-// import { UserRepository } from "../../repository/UserRepository"
+import { Request } from "express"
+import { UserRepository } from "../../repository/UserRepository"
 
-// export class GetUserByIdService  {
+export class GetUserByIdService  {
 
-//     async execute(req: Request) {
-
-//         const userRepository = new UserRepository()
-//         return await userRepository.getById(req)
-//     }
-// }
+    async execute(req: Request) {
+        const userRepository = new UserRepository()
+        const id = req.params.id
+        return await userRepository.getById(id)
+    }
+}

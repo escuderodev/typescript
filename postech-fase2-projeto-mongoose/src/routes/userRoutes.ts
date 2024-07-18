@@ -1,9 +1,9 @@
 import { Router } from "express"
 import { createUser } from "../controller/User/CreateUserController"
 import { getAllUsers } from "../controller/User/GetAllUsersController"
-// import { getUserById } from "../controller/User/GetUserByIdController"
-// import { updateUser } from "../controller/User/UpdateUserController"
-// import { deleteUser } from "../controller/User/DeleteUserController"
+import { getUserById } from "../controller/User/GetUserByIdController"
+import { updateUser } from "../controller/User/UpdateUserController"
+import { deleteUser } from "../controller/User/DeleteUserController"
 // import { login } from "../controller/User/LoginController"
 // import { LoginService } from "../service/User/LoginService"
 
@@ -21,12 +21,12 @@ userRouter.post("/users", createUser)
 userRouter.get("/users", getAllUsers)
 
 // // listar apenas um usuário
-// userRouter.get("/users/:id", getUserById)
+userRouter.get("/users/:id", getUserById)
 
 // // atualizar usuário
-// userRouter.put("/users/:id", loginService.checkToken, updateUser)
+userRouter.put("/users/:id", updateUser)
 
 // // deletar usuário
-// userRouter.delete("/users/:id", loginService.checkToken, deleteUser)
+userRouter.delete("/users/:id", deleteUser)
 
 export {userRouter}

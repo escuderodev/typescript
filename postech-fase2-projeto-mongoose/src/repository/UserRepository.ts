@@ -4,38 +4,21 @@ import User from "../model/User"
 export class UserRepository {
     async save(req: Request, passwordHash: string) {
         const { name, email } = req.body
-
         const user = {
             name: name,
             email: email,
             password: passwordHash
         }
         const newUser = await User.create(user)
-
-        return {
-            id: newUser.id,
-            name: newUser.name,
-            email: newUser.email
-        }
+        return newUser
     }
 
     async getAll() {
         return await User.find()
     }
 
-    async getById(req: Request) {
-        // const userSearch = await prisma.user.findUnique({
-        //     where: {
-        //       id: req.params.id,
-        //     },
-        //     select: {
-        //         id: true,
-        //         name: true,
-        //         email: true,
-        //         password: false
-        //     }
-        //   })
-        //  return userSearch
+    async getById(id: string) {
+        return await User.findById(id)
     }
 
     async getByEmail(email: string) {
@@ -44,29 +27,22 @@ export class UserRepository {
     }
 
     async update(req: Request, passwordHash: string) {
-        // return await prisma.user.update({
-        //     where: {
-        //         id: req.params.id
-        //     },
-        //     data: {
-        //         name: req.body.name,
-        //         email: req.body.email,
-        //         password: passwordHash
-        //     },
-        //     select: {
-        //         id: true,
-        //         name: true,
-        //         email: true,
-        //         password: false
-        //     }
-        // })
+
+        const id = req.params.id
+        const { name,email } = req.body
+
+        const user = {
+            id: id,
+            name: name,
+            email: email,
+            password: passwordHash,
+            updatedAt: Date.now()
+        }
+        return await User.updateOne({_id: id}, user)
     }
 
     async delete(req: Request) {
-        // await prisma.user.delete({
-        //     where: {
-        //         id: req.params.id
-        //     }
-        // })
+        const id = req.params.id
+        return await User.deleteOne({_id: id})
     }
 }
