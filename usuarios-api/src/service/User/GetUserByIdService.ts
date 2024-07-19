@@ -1,10 +1,11 @@
 import { Request } from "express"
 import { UserRepository } from "../../repository/UserRepository"
 
-export class DeleteUserService  {
+export class GetUserByIdService  {
 
     async execute(req: Request) {
         const userRepository = new UserRepository()
-        return userRepository.delete(req)
+        const id = req.params.id
+        return await userRepository.getById(id)
     }
 }
