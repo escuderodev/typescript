@@ -3,6 +3,7 @@ import "dotenv/config"
 import mongoose from "mongoose"
 import { userRouter } from "../src/routes/userRoutes"
 import { disciplineRouter } from "./routes/disciplineRoutes"
+import { postRouter } from "./routes/postRoutes"
 
 const app = express()
 const PORT = process.env.PORT
@@ -20,3 +21,4 @@ mongoose.connect(`mongodb+srv://${DB_USER}:${DB_PASSWORD}@postech.1kgukn8.mongod
 app.use(json())
 app.use(userRouter)
 app.use(disciplineRouter)
+app.use(postRouter)
