@@ -3,35 +3,39 @@ import Post from "../model/Post"
 
 export class PostRepository {
     async save(req: Request) {
-        const { title, description } = req.body
+
+        const { title, description, discipline } = req.body;
 
         const post = {
-            title: title,
-            description: description
+            title,
+            description,
+            discipline: discipline.id
         }
         const newPost = await Post.create(post)
         return newPost
     }
 
     async getAll() {
-        return await Post.find()
+        return await Post.find().populate('discipline')
     }
 
     async getById(id: string) {
-        return await Post.findById(id)
+        return await Post.findById(id).populate('discipline')
     }
 
     async update(req: Request) {
 
         const id = req.params.id
-        const { title } = req.body
+        const { title, description, discipline } = req.body
 
-        const discipline = {
+        const post = {
             id: id,
             title: title,
+            description: description,
+            discipline: discipline.id,
             updatedAt: Date.now()
         }
-        return await Post.updateOne({_id: id}, discipline)
+        return await Post.updateOne({_id: id}, post)
     }
 
     async delete(req: Request) {
