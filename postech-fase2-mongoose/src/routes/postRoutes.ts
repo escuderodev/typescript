@@ -1,6 +1,6 @@
 import { Router } from "express"
 import { createPost } from "../controller/Post/CreatePostController"
-// import { deleteDiscipline } from "../controller/Discipline/DeleteDisciplineController"
+import { deletePost } from "../controller/Post/DeletePostController"
 import { getAllPosts } from "../controller/Post/GetAllPostsController"
 import { getPostById } from "../controller/Post/GetPostByIdController"
 import { updatePost } from "../controller/Post/UpdatePostController"
@@ -22,7 +22,7 @@ postRouter.get("/posts/:id", getPostById)
 //  atualizar task
 postRouter.put("/posts/:id", loginService.checkToken, updatePost)
 
-// //  deletar task
-// postRouter.delete("/posts/:id", loginService.checkToken, deleteDiscipline)
+//  deletar task
+postRouter.delete("/posts/:id", loginService.checkToken, deletePost)
 
 export { postRouter }
