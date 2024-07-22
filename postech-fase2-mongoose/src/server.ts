@@ -22,3 +22,9 @@ app.use(json())
 app.use(userRouter)
 app.use(disciplineRouter)
 app.use(postRouter)
+
+app.get("/", (req: express.Request, res: express.Response) => {
+    res.status(200).json({message: "Bem vindo a minha API!"})
+})
+
+export { app }
