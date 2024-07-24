@@ -1,27 +1,36 @@
 import { Discipline } from "../../../models/Discipline";
+import { DisciplineDTO } from "../../../models/DisciplineDTO";
 import { Uuid } from "../../../models/Uuid";
 import { DisciplineRepository } from "../../../models/repository/DisciplineRepository";
 
 export class DisciplineRepositoryInMemory implements DisciplineRepository {
-    private disciplinies: Array<Discipline> = []
+    private disciplines: Map<string, Discipline>;
 
-    async save(discipline: Discipline): Promise<void> {
-        this.disciplinies.push(discipline)
+    constructor() {
+        this.disciplines = new Map<string, Discipline>();
     }
 
-    async getAll(): Promise<Discipline[]> {
-        return this.disciplinies
+    save(discipline: Discipline): void {
+        this.disciplines.set(discipline.getId().toString(), discipline);
     }
 
-    getById(id: Uuid): Promise<Discipline> {
-        throw new Error("Method not implemented.");
+    findById(id: string): Discipline | undefined {
+        return this.disciplines.get(id);
     }
 
-    remove(id: Uuid): Promise<void> {
-        throw new Error("Method not implemented.");
+    findAll(): Discipline[] {
+        return Array.from(this.disciplines.values());
     }
 
-    update(id: Uuid): Promise<Discipline> {
-        throw new Error("Method not implemented.");
+    deleteById(id: string): void {
+        this.disciplines.delete(id);
+    }
+
+    update(discipline: Discipline): void {
+        if (this.disciplines.has(discipline.getId().toString())) {
+            this.disciplines.set(discipline.getId().toString(), discipline);
+        } else {
+            throw new Error("Discipline not found");
+        }
     }
 }

@@ -1,10 +1,10 @@
 {
   "name": "usuarios-api",
   "version": "1.0.0",
-  "main": "server.ts",
+  "main": "index.ts",
   "scripts": {
     "test": "npx jest --passWithNoTests",
-    "dev": "ts-node-dev src/server.ts"
+    "dev": "ts-node-dev src/index.ts"
   },
   "keywords": [],
   "author": "",

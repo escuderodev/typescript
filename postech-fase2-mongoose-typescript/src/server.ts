@@ -1,30 +1,24 @@
 import express, { json } from "express"
 import "dotenv/config"
-import mongoose from "mongoose"
 import { userRouter } from "../src/routes/userRoutes"
 import { disciplineRouter } from "./routes/disciplineRoutes"
 import { postRouter } from "./routes/postRoutes"
 
-const app = express()
-const PORT = process.env.PORT
-const DB_USER = process.env.DB_USER
-const DB_PASSWORD = process.env.DB_PASSWORD
+export class App {
+    private server: express.Application
 
-mongoose.connect(`mongodb+srv://${DB_USER}:${DB_PASSWORD}@postech.1kgukn8.mongodb.net/postech?retryWrites=true&w=majority&appName=postech`)
-.then(() => {
-    app.listen(PORT, () => {
-        console.log(`Server is running on http://localhost:${PORT}`)
-    })
-})
-.catch(() => console.log("Conexão com banco de dados falhou!"))
+    constructor() {
+        this.server = express()
+        this.server.use(json())
+        this.server.use(userRouter)
+        this.server.use(disciplineRouter)
+        this.server.use(postRouter)
+        this.server.get("/", (req: express.Request, res: express.Response) => {
+            res.status(200).json({message: "Bem vindo a minha API!"})
+        })
+    }
 
-app.use(json())
-app.use(userRouter)
-app.use(disciplineRouter)
-app.use(postRouter)
-
-app.get("/", (req: express.Request, res: express.Response) => {
-    res.status(200).json({message: "Bem vindo a minha API!"})
-})
-
-export { app }
+    public getServer(): express.Application {
+        return this.server
+    }
+}

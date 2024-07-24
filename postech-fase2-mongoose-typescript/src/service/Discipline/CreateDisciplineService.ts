@@ -6,6 +6,7 @@ export class CreateDisciplineService {
     async execute(req: Request, res: Response) {
 
         const disciplineRepository = new DisciplineRepository()
+        
         const { title } = req.body
 
         // validations

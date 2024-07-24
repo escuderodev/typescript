@@ -7,7 +7,7 @@ export class DisciplineGetAllService {
 
     async execute() {
         try {
-            const disciplinies = await this.repository.getAll()
+            const disciplinies = await this.repository.findAll()
             return disciplinies
         } catch (error) {
             console.log(error)

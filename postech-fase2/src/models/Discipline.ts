@@ -20,4 +20,8 @@ export class Discipline {
     public getTitle() {
         return this.title
     }
+
+    public setTitle(title: string) {
+        this.title = title
+    }
 }
