@@ -13,11 +13,12 @@ export class CreateDisciplineService {
         // validations
         // check requireds fields
         if(!title) {
-            return res.status(422).json({message: 'title field is required!'})
+            // return res.status(422).json({message: 'title field is required!'})
+            throw new Error('title field is required!')
         }
     
-        // create task
-        return this.repository.save(req)
-
+        // create discipline
+        const newDiscipline = await this.repository.save(req);
+        return newDiscipline;
     }
 }

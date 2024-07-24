@@ -1,5 +1,5 @@
 import request from 'supertest';
-import { App } from "../src/server" // Supondo que seu arquivo principal do Express seja `app.ts`
+import { App } from "../src/server"
 
 const { setup, teardown } = require('../src/test/setup.js');
 
@@ -14,7 +14,8 @@ afterAll(async () => {
 
 const app = new App().getServer()
 
-describe('GET /disciplinies', () => {
+// Test GetAll
+describe('===Testando o metodo GetAll ===', () => {
   it('deve retornar status 200', async () => {
     const response = await request(app).get('/disciplinies');
     expect(response.status).toBe(200);
@@ -25,5 +26,3 @@ describe('GET /disciplinies', () => {
     expect(response.status).toBe(404);
   });
 });
-
-// Repita para outros endpoints e métodos HTTP (POST, PUT, DELETE, etc.)

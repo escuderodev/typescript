@@ -5,10 +5,8 @@ import { DisciplineRepository } from "../../controller/Discipline/repository/Dis
 export class DisciplineRepositoryInMongoDB implements DisciplineRepository {
     async save(req: Request) {
         const { title } = req.body
-        const discipline = {
-            title: title
-        }
-        const newDiscipline = await Discipline.create(discipline)
+        const discipline = new Discipline({ title })
+        const newDiscipline = await discipline.save()
         return newDiscipline
     }
 

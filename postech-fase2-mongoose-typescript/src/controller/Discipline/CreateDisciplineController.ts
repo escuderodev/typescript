@@ -7,10 +7,8 @@ export class CreateDisciplineController {
     }
 
     async createDiscipline(req: Request, res: Response) {
-
-        await this.service.execute(req, res)
-        res.status(201).json({
-            message: "create discipline is success!"
-        })
+        const newDiscipline = await this.service.execute(req, res)
+        console.log(newDiscipline)
+        res.status(201).json({newDiscipline})
     }
 }
