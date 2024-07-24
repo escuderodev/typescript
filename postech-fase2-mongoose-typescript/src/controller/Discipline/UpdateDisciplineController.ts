@@ -1,14 +1,17 @@
 import { Request, Response } from "express"
 import { UpdateDisciplineService } from "../../service/Discipline/UpdateDisciplineService"
 
-export const updateDiscipline = async (req: Request, res: Response) => {
-
-    const updateDisciplineService = new UpdateDisciplineService()
-
-    const result = await updateDisciplineService.execute(req)
+export class UpdateDisciplineController {
     
-    res.status(200).json({
-        message: result,
-    })
+    constructor(readonly service: UpdateDisciplineService){
+    }
 
+    async updateDiscipline(req: Request, res: Response) {
+    
+        const result = await this.service.execute(req)
+        
+        res.status(200).json({
+            message: result,
+        })
+    }
 }

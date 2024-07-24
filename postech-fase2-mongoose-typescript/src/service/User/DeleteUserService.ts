@@ -1,5 +1,5 @@
 import { Request } from "express"
-import { UserRepository } from "../../database/repository/UserRepository"
+import { UserRepository } from "../../database/repository/UserRepositoryInMongoDB"
 
 export class DeleteUserService  {
 

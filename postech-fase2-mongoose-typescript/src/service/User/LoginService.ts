@@ -2,7 +2,7 @@ import { Request, Response } from "express"
 import jwt from "jsonwebtoken"
 import bcrypt from "bcrypt"
 import "dotenv/config"
-import { UserRepository } from "../../database/repository/UserRepository"
+import { UserRepository } from "../../database/repository/UserRepositoryInMongoDB"
 
 // const secret = process.env.SECRET
 

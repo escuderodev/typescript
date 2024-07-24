@@ -1,5 +1,5 @@
 import { Request } from "express"
-import { PostRepository } from "../../database/repository/PostRepository"
+import { PostRepository } from "../../database/repository/PostRepositoryInMongoDB"
 import Post from "../../model/post/Post"
 
 export class UpdatePostService  {

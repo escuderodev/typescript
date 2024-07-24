@@ -1,5 +1,5 @@
 import { Request, Response } from "express"
-import { PostRepository } from "../../database/repository/PostRepository"
+import { PostRepository } from "../../database/repository/PostRepositoryInMongoDB"
 import Discipline from "../../model/discipline/Discipline";
 
 export class CreatePostService {

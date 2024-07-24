@@ -1,11 +1,13 @@
 import { Request } from "express"
-import { DisciplineRepository } from "../../database/repository/DisciplineRepository"
+import { DisciplineRepository } from "../../controller/Discipline/repository/DisciplineRepository"
 
 export class GetDisciplineByIdService  {
 
+    constructor(readonly repository: DisciplineRepository) {
+    }
+
     async execute(req: Request) {
-        const disciplineRepository = new DisciplineRepository()
         const id = req.params.id
-        return await disciplineRepository.getById(id)
+        return await this.repository.getById(id)
     }
 }

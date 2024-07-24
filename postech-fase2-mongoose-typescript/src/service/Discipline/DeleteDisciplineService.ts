@@ -1,10 +1,12 @@
 import { Request } from "express"
-import { DisciplineRepository } from "../../database/repository/DisciplineRepository"
+import { DisciplineRepository } from "../../controller/Discipline/repository/DisciplineRepository"
 
 export class DeleteDisciplineService  {
 
+    constructor(readonly repository: DisciplineRepository) {
+    }
+
     async execute(req: Request) {
-        const disciplineRepository = new DisciplineRepository()
-        return disciplineRepository.delete(req)
+        return this.repository.delete(req)
     }
 }

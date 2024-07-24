@@ -1,9 +1,15 @@
 import { Request, Response } from "express"
 import { GetAllDiscipliniesService } from "../../service/Discipline/GetAllDiscipliniesService"
 
-export const getAllDisciplinies = async (req: Request, res: Response) => {
+export class GetAllDiscipliniesController {
 
-    const getAllDiscipliniesService = new GetAllDiscipliniesService()
-    const disciplineList = await getAllDiscipliniesService.execute(req)
-    res.status(200).json({disciplineList})
+    constructor(readonly service: GetAllDiscipliniesService){
+    }
+    
+    async getAllDisciplinies(req: Request, res: Response) {
+
+        const disciplineList = await this.service.execute(req)
+        res.status(200).json({disciplineList})
+    }
+
 }

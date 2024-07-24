@@ -1,5 +1,5 @@
 import { Request, Response } from "express"
-import { UserRepository } from "../../database/repository/UserRepository"
+import { UserRepository } from "../../database/repository/UserRepositoryInMongoDB"
 import bcrypt from "bcrypt"
 import User from "../../model/user/User"
 

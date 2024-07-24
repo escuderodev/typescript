@@ -1,12 +1,13 @@
 import { Request, Response } from "express"
-import { DisciplineRepository } from "../../database/repository/DisciplineRepository"
+import { DisciplineRepository } from "../../controller/Discipline/repository/DisciplineRepository"
 
 export class CreateDisciplineService {
 
-    async execute(req: Request, res: Response) {
+    constructor(readonly repository: DisciplineRepository) {
+    }
 
-        const disciplineRepository = new DisciplineRepository()
-        
+    async execute(req: Request, res: Response) {
+ 
         const { title } = req.body
 
         // validations
@@ -16,7 +17,7 @@ export class CreateDisciplineService {
         }
     
         // create task
-        return disciplineRepository.save(req)
+        return this.repository.save(req)
 
     }
 }
