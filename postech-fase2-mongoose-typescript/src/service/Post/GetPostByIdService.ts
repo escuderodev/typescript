@@ -1,5 +1,5 @@
 import { Request } from "express"
-import { PostRepository } from "../../repository/PostRepository"
+import { PostRepository } from "../../database/repository/PostRepository"
 
 export class GetPostByIdService  {
 

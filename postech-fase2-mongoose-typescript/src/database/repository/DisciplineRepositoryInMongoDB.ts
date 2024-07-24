@@ -1,7 +1,8 @@
 import { Request } from "express"
-import Discipline from "../model/Discipline"
+import Discipline from "../../model/discipline/Discipline"
+import { DisciplineRepository } from "../../controller/Discipline/repository/DisciplineRepository"
 
-export class DisciplineRepository {
+export class DisciplineRepositoryInMongoDB implements DisciplineRepository {
     async save(req: Request) {
         const { title } = req.body
         const discipline = {

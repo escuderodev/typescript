@@ -1,6 +1,6 @@
 import { Request, Response } from "express"
 import { DeleteUserService } from "../../service/User/DeleteUserService"
-import User from "../../model/User"
+import User from "../../model/user/User"
 
 export const deleteUser = async (req: Request, res: Response) => {
 

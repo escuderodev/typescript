@@ -1,6 +1,6 @@
 import { Request, Response } from "express"
 import { DeleteDisciplineService } from "../../service/Discipline/DeleteDisciplineService"
-import Discipline from "../../model/Discipline"
+import Discipline from "../../model/discipline/Discipline"
 
 export const deleteDiscipline = async (req: Request, res: Response) => {
 

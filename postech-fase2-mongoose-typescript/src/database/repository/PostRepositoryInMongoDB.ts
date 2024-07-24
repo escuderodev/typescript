@@ -1,5 +1,5 @@
 import { Request } from "express"
-import Post from "../model/Post"
+import Post from "../../model/post/Post"
 
 export class PostRepository {
     async save(req: Request) {

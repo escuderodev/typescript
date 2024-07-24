@@ -1,6 +1,6 @@
 import { Request } from "express"
-import { PostRepository } from "../../repository/PostRepository"
-import Post from "../../model/Post"
+import { PostRepository } from "../../database/repository/PostRepository"
+import Post from "../../model/post/Post"
 
 export class UpdatePostService  {
 

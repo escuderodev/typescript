@@ -1,5 +1,5 @@
 import { Request, Response } from "express"
-import { UserRepository } from "../../repository/UserRepository"
+import { UserRepository } from "../../database/repository/UserRepository"
 import bcrypt from "bcrypt"
 
 export class CreateUserService  {

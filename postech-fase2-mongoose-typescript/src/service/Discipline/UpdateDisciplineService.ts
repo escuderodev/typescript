@@ -1,6 +1,6 @@
 import { Request } from "express"
-import { DisciplineRepository } from "../../repository/DisciplineRepository"
-import Discipline from "../../model/Discipline"
+import { DisciplineRepository } from "../../database/repository/DisciplineRepository"
+import Discipline from "../../model/discipline/Discipline"
 
 export class UpdateDisciplineService  {
 

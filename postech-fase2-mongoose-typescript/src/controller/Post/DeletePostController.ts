@@ -1,6 +1,6 @@
 import { Request, Response } from "express"
 import { DeletePostService } from "../../service/Post/DeletePostService"
-import Post from "../../model/Post"
+import Post from "../../model/post/Post"
 
 export const deletePost = async (req: Request, res: Response) => {
 

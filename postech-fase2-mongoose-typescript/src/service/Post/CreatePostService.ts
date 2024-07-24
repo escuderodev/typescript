@@ -1,6 +1,6 @@
 import { Request, Response } from "express"
-import { PostRepository } from "../../repository/PostRepository"
-import Discipline from "../../model/Discipline";
+import { PostRepository } from "../../database/repository/PostRepository"
+import Discipline from "../../model/discipline/Discipline";
 
 export class CreatePostService {
 

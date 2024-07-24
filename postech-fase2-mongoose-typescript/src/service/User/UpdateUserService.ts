@@ -1,7 +1,7 @@
 import { Request, Response } from "express"
-import { UserRepository } from "../../repository/UserRepository"
+import { UserRepository } from "../../database/repository/UserRepository"
 import bcrypt from "bcrypt"
-import User from "../../model/User"
+import User from "../../model/user/User"
 
 export class UpdateUserService  {
 

@@ -1,5 +1,5 @@
 import { Request, Response } from "express"
-import { DisciplineRepository } from "../../repository/DisciplineRepository"
+import { DisciplineRepository } from "../../database/repository/DisciplineRepository"
 
 export class CreateDisciplineService {
 

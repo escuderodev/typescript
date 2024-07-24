@@ -1,5 +1,5 @@
 import { Request } from "express"
-import User from "../model/User"
+import User from "../../model/user/User"
 
 export class UserRepository {
     async save(req: Request, passwordHash: string) {
