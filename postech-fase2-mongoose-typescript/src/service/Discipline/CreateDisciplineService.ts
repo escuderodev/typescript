@@ -13,7 +13,6 @@ export class CreateDisciplineService {
         // validations
         // check requireds fields
         if(!title) {
-            // return res.status(422).json({message: 'title field is required!'})
             throw new Error('title field is required!')
         }
     

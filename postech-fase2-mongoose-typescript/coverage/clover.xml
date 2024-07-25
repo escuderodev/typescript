@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1721925030585" clover="3.2.0">
-  <project timestamp="1721925030585" name="All files">
-    <metrics statements="378" coveredstatements="173" conditionals="25" coveredconditionals="0" methods="67" coveredmethods="16" elements="470" coveredelements="189" complexity="0" loc="378" ncloc="378" packages="12" files="42" classes="42"/>
+<coverage generated="1721926964865" clover="3.2.0">
+  <project timestamp="1721926964865" name="All files">
+    <metrics statements="378" coveredstatements="177" conditionals="25" coveredconditionals="2" methods="67" coveredmethods="17" elements="470" coveredelements="196" complexity="0" loc="378" ncloc="378" packages="12" files="42" classes="42"/>
     <package name="src">
       <metrics statements="14" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
       <file name="server.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\server.ts">
@@ -363,9 +363,9 @@
         <line num="6" count="1" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
         <line num="15" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="17" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
       </file>
       <file name="DeleteDisciplineService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\service\Discipline\DeleteDisciplineService.ts">
         <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
@@ -450,7 +450,7 @@
       </file>
     </package>
     <package name="src.service.User">
-      <metrics statements="72" coveredstatements="18" conditionals="15" coveredconditionals="0" methods="7" coveredmethods="0"/>
+      <metrics statements="72" coveredstatements="22" conditionals="15" coveredconditionals="2" methods="7" coveredmethods="1"/>
       <file name="CreateUserService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\service\User\CreateUserService.ts">
         <metrics statements="19" coveredstatements="3" conditionals="5" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
@@ -496,7 +496,7 @@
         <line num="9" count="0" type="stmt"/>
       </file>
       <file name="LoginService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\service\User\LoginService.ts">
-        <metrics statements="26" coveredstatements="5" conditionals="9" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <metrics statements="26" coveredstatements="9" conditionals="9" coveredconditionals="2" methods="2" coveredmethods="1"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -514,10 +514,10 @@
         <line num="30" count="0" type="stmt"/>
         <line num="31" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="32" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="40" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="42" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="43" count="0" type="stmt"/>
+        <line num="39" count="3" type="stmt"/>
+        <line num="40" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="42" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="43" count="3" type="stmt"/>
         <line num="46" count="0" type="stmt"/>
         <line num="47" count="0" type="stmt"/>
         <line num="48" count="0" type="cond" truecount="0" falsecount="2"/>
