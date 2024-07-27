@@ -1,13 +1,13 @@
 import { Insumo } from "../entities/insumo"
 
-interface CreateInsumoRequest {
+export interface CreateInsumoRequest {
     nome: string
     qtdEmbalagem: number
     valorEmbalagem: number
     unidadeMedida: string
 }
 
-type CreateInsumoResponse = Insumo
+export type CreateInsumoResponse = Insumo
 
 export class CreateInsumo {
     async execute(request: CreateInsumoRequest): Promise<CreateInsumoResponse> {
