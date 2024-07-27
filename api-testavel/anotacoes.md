@@ -8,4 +8,5 @@
 - para realizar testes vamos instalar o ViTest => npm i -D vitest
 - criar arquivo vite.config.ts e exportá-lo
 - criar os casos de teste
+- curiosidade = lib de datas no js (date-fns)
 - 
