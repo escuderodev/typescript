@@ -1,7 +1,9 @@
 import { Request } from "express"
 import Post from "../../model/post/Post"
+import { PostRepository } from "../../controller/Post/repository/PostRepository";
 
-export class PostRepository {
+export class PostRepositoryInMongoDB implements PostRepository {
+    
     async save(req: Request) {
 
         const { title, description, discipline } = req.body;
@@ -21,6 +23,17 @@ export class PostRepository {
 
     async getById(id: string) {
         return await Post.findById(id).populate('discipline')
+    }
+
+    async getByText(regex: RegExp) {
+
+        const posts = await Post.find({
+            $or: [
+                { title: regex },
+                { description: regex },
+            ],
+        }).populate('discipline');
+        return posts
     }
 
     async update(req: Request) {
