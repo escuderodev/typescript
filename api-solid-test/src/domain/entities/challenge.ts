@@ -5,7 +5,7 @@ type ChallengeProps = {
     instructionsUrl: string
 }
 
-class Challenge extends Entity<ChallengeProps> {
+export class Challenge extends Entity<ChallengeProps> {
     private constructor(props: ChallengeProps, id?: string) {
         super(props, id)
     }
@@ -15,3 +15,5 @@ class Challenge extends Entity<ChallengeProps> {
         return challenge
     }
 }
+
+// Paramos aos 36:38 de https://www.youtube.com/watch?v=mjBsii0eiuI
