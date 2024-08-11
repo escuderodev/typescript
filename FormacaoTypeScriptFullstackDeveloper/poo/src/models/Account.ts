@@ -1,9 +1,9 @@
 import { Client } from "./Client"
 
 export class Account {
-    private accountNumber: number
-    private client: Client
-    private balance: number
+    protected accountNumber: number
+    protected client: Client
+    protected balance: number
 
     constructor(accountNumber: number, client: Client) {
         this.accountNumber = accountNumber
