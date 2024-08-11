@@ -15,5 +15,3 @@ export class Challenge extends Entity<ChallengeProps> {
         return challenge
     }
 }
-
-// Paramos aos 36:38 de https://www.youtube.com/watch?v=mjBsii0eiuI
