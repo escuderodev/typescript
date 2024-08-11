@@ -1,4 +1,4 @@
-export class Person {
+export class Client {
     private name: string
     private age: number
 
