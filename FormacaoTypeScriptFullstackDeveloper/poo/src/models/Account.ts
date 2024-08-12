@@ -1,6 +1,6 @@
 import { Client } from "./Client"
 
-export class Account {
+export abstract class Account {
     protected accountNumber: number
     protected client: Client
     protected balance: number

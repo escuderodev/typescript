@@ -1,6 +1,6 @@
 import { Client } from "./models/Client"
-import { CurrentAccount } from "./models/currentAccount"
-import { SavingsAccount } from "./models/savingsAccount"
+import { CurrentAccount } from "./models/CurrentAccount"
+import { SavingsAccount } from "./models/SavingsAccount"
 
 const eduardo: Client = new Client("Eduardo Escudero", 40)
 const carol: Client = new Client("Carol Tobias", 41)
