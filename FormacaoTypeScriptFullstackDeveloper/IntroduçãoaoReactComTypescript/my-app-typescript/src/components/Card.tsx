@@ -1,11 +1,12 @@
-export const Card = () => {
+interface ICard {
+    id: number
+}
+
+export const Card = ({id}: ICard) => {
     return (
       <div>
-        Primeiro App React com TypeScript
-          <div>
-            <h1>Card</h1>
-            <p>Descrição do card.</p>
-          </div>
+        <h1>Card {id}</h1>
+        <p>Descrição do card.</p>
       </div>
     )
 }
