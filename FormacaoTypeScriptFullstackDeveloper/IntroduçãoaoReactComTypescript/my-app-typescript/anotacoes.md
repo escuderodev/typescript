@@ -22,4 +22,6 @@
         <Card id={1}/>
         <Card id={2}/>
         <Card id={3}/>
+- instalar lib styled-components => npm i styled-components
+- instalar os tipos necessários => npm i -D @types/styled-components
 - 
