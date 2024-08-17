@@ -24,4 +24,6 @@
         <Card id={3}/>
 - instalar lib styled-components => npm i styled-components
 - instalar os tipos necessários => npm i -D @types/styled-components
+- desconsiderar styled-components e passar aq usar ChackraUI
+- instalar chackraui => npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
 - 
