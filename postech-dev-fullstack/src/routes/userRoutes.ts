@@ -84,7 +84,7 @@ userRouter.post("/login", login)
  *         description: Erro na criação do usuário
  */
 // criar
-userRouter.post("/users", (req: Request, res: Response) => {
+userRouter.post("/users", loginService.checkToken, (req: Request, res: Response) => {
     createUserController.createUser(req, res)
 })
 
