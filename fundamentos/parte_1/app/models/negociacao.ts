@@ -12,7 +12,10 @@ export class Negociacao {
     
     // forma simplificada
     // se necessário, poderia ter um atributo diferente aqui
-    constructor(private _data: Date, private _quantidade: number, private _valor: number) {}
+    constructor(
+        private _data: Date, 
+        private _quantidade: number, 
+        private _valor: number) {}
  
     get data(): Date {
         return this._data
