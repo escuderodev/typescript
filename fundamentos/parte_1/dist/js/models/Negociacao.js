@@ -10,9 +10,6 @@ export class Negociacao {
     get quantidade() {
         return this._quantidade;
     }
-    set quantidade(quantidade) {
-        this._quantidade = quantidade;
-    }
     get valor() {
         return this._valor;
     }

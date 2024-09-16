@@ -1,17 +1,26 @@
+import { Negociacao } from "../models/negociacao.js"
+
 export class NegociacaoController {
-    private inputData
-    private inputQuantidade
-    private inputValor
+    private inputData: HTMLInputElement
+    private inputQuantidade: HTMLInputElement
+    private inputValor: HTMLInputElement
 
     constructor() {
-        this.inputData = document.getElementById("data")
-        this.inputQuantidade = document.getElementById("quantidade")
-        this.inputValor = document.getElementById("valor")
+        this.inputData = document.querySelector("#data")
+        this.inputQuantidade = document.querySelector("#quantidade")
+        this.inputValor = document.querySelector("#valor")
     }
 
-    adicionaNegociacao() {
-        console.log(this.inputData.value)
-        console.log(this.inputQuantidade.value)
-        console.log(this.inputValor.value)
+    adicionaNegociacao(): void {
+        const negociacao = this.criaNegociacao()
+        console.log(negociacao)
+    }
+
+    criaNegociacao(): Negociacao {
+        const regex = /-/g
+        const data = new Date(this.inputData.value.replace(regex, ','))
+        const quantidade = Number(this.inputQuantidade.value)
+        const valor = Number(this.inputValor.value)
+        return new Negociacao(data, quantidade, valor)
     }
 }
