@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1722826040642" clover="3.2.0">
-  <project timestamp="1722826040642" name="All files">
-    <metrics statements="471" coveredstatements="264" conditionals="37" coveredconditionals="2" methods="106" coveredmethods="53" elements="614" coveredelements="319" complexity="0" loc="471" ncloc="471" packages="13" files="45" classes="45"/>
+<coverage generated="1723469281228" clover="3.2.0">
+  <project timestamp="1723469281228" name="All files">
+    <metrics statements="475" coveredstatements="264" conditionals="38" coveredconditionals="2" methods="106" coveredmethods="53" elements="619" coveredelements="319" complexity="0" loc="475" ncloc="475" packages="13" files="45" classes="45"/>
     <package name="postech-fase2-projeto">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="swagger.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/swagger.ts">
+      <file name="swagger.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\swagger.ts">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
@@ -16,7 +16,7 @@
     </package>
     <package name="postech-fase2-projeto.src">
       <metrics statements="16" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
-      <file name="server.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/server.ts">
+      <file name="server.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\server.ts">
         <metrics statements="16" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
@@ -38,14 +38,14 @@
     </package>
     <package name="postech-fase2-projeto.src.controller.Discipline">
       <metrics statements="31" coveredstatements="13" conditionals="2" coveredconditionals="0" methods="10" coveredmethods="6"/>
-      <file name="CreateDisciplineController.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/controller/Discipline/CreateDisciplineController.ts">
+      <file name="CreateDisciplineController.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\controller\Discipline\CreateDisciplineController.ts">
         <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="4" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
       </file>
-      <file name="DeleteDisciplineController.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/controller/Discipline/DeleteDisciplineController.ts">
+      <file name="DeleteDisciplineController.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\controller\Discipline\DeleteDisciplineController.ts">
         <metrics statements="12" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="3" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
@@ -60,14 +60,14 @@
         <line num="22" count="0" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
       </file>
-      <file name="GetAllDiscipliniesController.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/controller/Discipline/GetAllDiscipliniesController.ts">
+      <file name="GetAllDiscipliniesController.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\controller\Discipline\GetAllDiscipliniesController.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="4" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
       </file>
-      <file name="GetDisciplineByIdController.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/controller/Discipline/GetDisciplineByIdController.ts">
+      <file name="GetDisciplineByIdController.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\controller\Discipline\GetDisciplineByIdController.ts">
         <metrics statements="7" coveredstatements="2" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="4" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
@@ -77,7 +77,7 @@
         <line num="15" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
       </file>
-      <file name="UpdateDisciplineController.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/controller/Discipline/UpdateDisciplineController.ts">
+      <file name="UpdateDisciplineController.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\controller\Discipline\UpdateDisciplineController.ts">
         <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="4" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
@@ -87,7 +87,7 @@
     </package>
     <package name="postech-fase2-projeto.src.controller.Post">
       <metrics statements="44" coveredstatements="15" conditionals="5" coveredconditionals="0" methods="12" coveredmethods="7"/>
-      <file name="CreatePostController.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/controller/Post/CreatePostController.ts">
+      <file name="CreatePostController.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\controller\Post\CreatePostController.ts">
         <metrics statements="7" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="4" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
@@ -97,7 +97,7 @@
         <line num="16" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
       </file>
-      <file name="DeletePostController.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/controller/Post/DeletePostController.ts">
+      <file name="DeletePostController.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\controller\Post\DeletePostController.ts">
         <metrics statements="12" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="3" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
@@ -112,14 +112,14 @@
         <line num="21" count="0" type="stmt"/>
         <line num="23" count="0" type="stmt"/>
       </file>
-      <file name="GetAllPostsController.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/controller/Post/GetAllPostsController.ts">
+      <file name="GetAllPostsController.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\controller\Post\GetAllPostsController.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="4" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
       </file>
-      <file name="GetPostByIdController.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/controller/Post/GetPostByIdController.ts">
+      <file name="GetPostByIdController.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\controller\Post\GetPostByIdController.ts">
         <metrics statements="7" coveredstatements="2" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="4" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
@@ -129,7 +129,7 @@
         <line num="14" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
       </file>
-      <file name="GetPostByTextController.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/controller/Post/GetPostByTextController.ts">
+      <file name="GetPostByTextController.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\controller\Post\GetPostByTextController.ts">
         <metrics statements="10" coveredstatements="2" conditionals="3" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="4" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
@@ -142,7 +142,7 @@
         <line num="20" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
       </file>
-      <file name="UpdatePostController.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/controller/Post/UpdatePostController.ts">
+      <file name="UpdatePostController.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\controller\Post\UpdatePostController.ts">
         <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="4" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
@@ -152,14 +152,14 @@
     </package>
     <package name="postech-fase2-projeto.src.controller.User">
       <metrics statements="41" coveredstatements="17" conditionals="3" coveredconditionals="0" methods="11" coveredmethods="7"/>
-      <file name="CreateUserController.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/controller/User/CreateUserController.ts">
+      <file name="CreateUserController.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\controller\User\CreateUserController.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="4" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
       </file>
-      <file name="DeleteUserController.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/controller/User/DeleteUserController.ts">
+      <file name="DeleteUserController.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\controller\User\DeleteUserController.ts">
         <metrics statements="12" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="3" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
@@ -174,14 +174,14 @@
         <line num="22" count="0" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
       </file>
-      <file name="GetAllUsersController.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/controller/User/GetAllUsersController.ts">
+      <file name="GetAllUsersController.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\controller\User\GetAllUsersController.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="4" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
       </file>
-      <file name="GetUserByIdController.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/controller/User/GetUserByIdController.ts">
+      <file name="GetUserByIdController.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\controller\User\GetUserByIdController.ts">
         <metrics statements="8" coveredstatements="2" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="4" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
@@ -192,7 +192,7 @@
         <line num="16" count="0" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
       </file>
-      <file name="LoginController.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/controller/User/LoginController.ts">
+      <file name="LoginController.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\controller\User\LoginController.ts">
         <metrics statements="9" coveredstatements="2" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
@@ -204,7 +204,7 @@
         <line num="16" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
       </file>
-      <file name="UpdateUserController.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/controller/User/UpdateUserController.ts">
+      <file name="UpdateUserController.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\controller\User\UpdateUserController.ts">
         <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="4" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
@@ -213,8 +213,8 @@
       </file>
     </package>
     <package name="postech-fase2-projeto.src.database.repository">
-      <metrics statements="68" coveredstatements="21" conditionals="6" coveredconditionals="0" methods="17" coveredmethods="5"/>
-      <file name="DisciplineRepositoryInMongoDB.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/database/repository/DisciplineRepositoryInMongoDB.ts">
+      <metrics statements="75" coveredstatements="22" conditionals="8" coveredconditionals="0" methods="17" coveredmethods="5"/>
+      <file name="DisciplineRepositoryInMongoDB.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\database\repository\DisciplineRepositoryInMongoDB.ts">
         <metrics statements="14" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="1"/>
         <line num="2" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
@@ -231,48 +231,55 @@
         <line num="34" count="0" type="stmt"/>
         <line num="35" count="0" type="stmt"/>
       </file>
-      <file name="PostRepositoryInMongoDB.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/database/repository/PostRepositoryInMongoDB.ts">
-        <metrics statements="38" coveredstatements="9" conditionals="6" coveredconditionals="0" methods="6" coveredmethods="1"/>
+      <file name="PostRepositoryInMongoDB.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\database\repository\PostRepositoryInMongoDB.ts">
+        <metrics statements="45" coveredstatements="10" conditionals="8" coveredconditionals="0" methods="6" coveredmethods="1"/>
         <line num="2" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
         <line num="9" count="3" type="stmt"/>
         <line num="10" count="3" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
-        <line num="19" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="23" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="29" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="20" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="24" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="30" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="36" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="37" count="0" type="stmt"/>
         <line num="40" count="0" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="47" count="1" type="stmt"/>
-        <line num="51" count="0" type="stmt"/>
-        <line num="56" count="0" type="stmt"/>
-        <line num="62" count="0" type="stmt"/>
-        <line num="67" count="0" type="stmt"/>
-        <line num="68" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
         <line num="69" count="0" type="stmt"/>
-        <line num="71" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="73" count="0" type="stmt"/>
-        <line num="75" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="74" count="0" type="stmt"/>
+        <line num="75" count="0" type="stmt"/>
         <line num="76" count="0" type="stmt"/>
-        <line num="79" count="0" type="stmt"/>
-        <line num="81" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="82" count="0" type="stmt"/>
-        <line num="85" count="0" type="stmt"/>
-        <line num="93" count="0" type="stmt"/>
-        <line num="98" count="0" type="stmt"/>
-        <line num="99" count="0" type="stmt"/>
+        <line num="78" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="80" count="0" type="stmt"/>
+        <line num="82" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="83" count="0" type="stmt"/>
+        <line num="86" count="0" type="stmt"/>
+        <line num="88" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="89" count="0" type="stmt"/>
+        <line num="92" count="0" type="stmt"/>
+        <line num="93" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="94" count="0" type="stmt"/>
+        <line num="97" count="0" type="stmt"/>
+        <line num="105" count="0" type="stmt"/>
+        <line num="110" count="0" type="stmt"/>
+        <line num="111" count="0" type="stmt"/>
       </file>
-      <file name="UserRepositoryInMongoDB.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/database/repository/UserRepositoryInMongoDB.ts">
+      <file name="UserRepositoryInMongoDB.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\database\repository\UserRepositoryInMongoDB.ts">
         <metrics statements="16" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="3"/>
         <line num="2" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
@@ -294,7 +301,7 @@
     </package>
     <package name="postech-fase2-projeto.src.model.discipline">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="Discipline.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/model/discipline/Discipline.ts">
+      <file name="Discipline.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\model\discipline\Discipline.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="3" type="stmt"/>
         <line num="9" count="3" type="stmt"/>
@@ -303,16 +310,16 @@
     </package>
     <package name="postech-fase2-projeto.src.model.post">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="Post.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/model/post/Post.ts">
+      <file name="Post.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\model\post\Post.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
-        <line num="16" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
       </file>
     </package>
     <package name="postech-fase2-projeto.src.model.user">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="User.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/model/user/User.ts">
+      <file name="User.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\model\user\User.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
@@ -321,7 +328,7 @@
     </package>
     <package name="postech-fase2-projeto.src.routes">
       <metrics statements="121" coveredstatements="108" conditionals="0" coveredconditionals="0" methods="17" coveredmethods="4"/>
-      <file name="disciplineRoutes.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/routes/disciplineRoutes.ts">
+      <file name="disciplineRoutes.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\routes\disciplineRoutes.ts">
         <metrics statements="37" coveredstatements="33" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="1"/>
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
@@ -361,7 +368,7 @@
         <line num="167" count="0" type="stmt"/>
         <line num="170" count="3" type="stmt"/>
       </file>
-      <file name="postRoutes.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/routes/postRoutes.ts">
+      <file name="postRoutes.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\routes\postRoutes.ts">
         <metrics statements="45" coveredstatements="39" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="1"/>
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
@@ -409,7 +416,7 @@
         <line num="233" count="0" type="stmt"/>
         <line num="236" count="3" type="stmt"/>
       </file>
-      <file name="userRoutes.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/routes/userRoutes.ts">
+      <file name="userRoutes.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\routes\userRoutes.ts">
         <metrics statements="39" coveredstatements="36" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="2"/>
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
@@ -454,7 +461,7 @@
     </package>
     <package name="postech-fase2-projeto.src.service.Discipline">
       <metrics statements="26" coveredstatements="12" conditionals="2" coveredconditionals="0" methods="10" coveredmethods="6"/>
-      <file name="CreateDisciplineService.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/service/Discipline/CreateDisciplineService.ts">
+      <file name="CreateDisciplineService.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\service\Discipline\CreateDisciplineService.ts">
         <metrics statements="7" coveredstatements="2" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="4" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
@@ -464,26 +471,26 @@
         <line num="20" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
       </file>
-      <file name="DeleteDisciplineService.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/service/Discipline/DeleteDisciplineService.ts">
+      <file name="DeleteDisciplineService.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\service\Discipline\DeleteDisciplineService.ts">
         <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="4" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
       </file>
-      <file name="GetAllDiscipliniesService.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/service/Discipline/GetAllDiscipliniesService.ts">
+      <file name="GetAllDiscipliniesService.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\service\Discipline\GetAllDiscipliniesService.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="4" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
       </file>
-      <file name="GetDisciplineByIdService.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/service/Discipline/GetDisciplineByIdService.ts">
+      <file name="GetDisciplineByIdService.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\service\Discipline\GetDisciplineByIdService.ts">
         <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="4" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
       </file>
-      <file name="UpdateDisciplineService.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/service/Discipline/UpdateDisciplineService.ts">
+      <file name="UpdateDisciplineService.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\service\Discipline\UpdateDisciplineService.ts">
         <metrics statements="9" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="3" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
@@ -497,38 +504,34 @@
       </file>
     </package>
     <package name="postech-fase2-projeto.src.service.Post">
-      <metrics statements="32" coveredstatements="15" conditionals="2" coveredconditionals="0" methods="12" coveredmethods="7"/>
-      <file name="CreatePostService.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/service/Post/CreatePostService.ts">
-        <metrics statements="8" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="3" count="3" type="stmt"/>
+      <metrics statements="29" coveredstatements="14" conditionals="1" coveredconditionals="0" methods="12" coveredmethods="7"/>
+      <file name="CreatePostService.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\service\Post\CreatePostService.ts">
+        <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="5" count="3" type="stmt"/>
         <line num="7" count="3" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="17" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
       </file>
-      <file name="DeletePostService.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/service/Post/DeletePostService.ts">
+      <file name="DeletePostService.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\service\Post\DeletePostService.ts">
         <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="4" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
       </file>
-      <file name="GetAllPostsService.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/service/Post/GetAllPostsService.ts">
+      <file name="GetAllPostsService.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\service\Post\GetAllPostsService.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="4" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
       </file>
-      <file name="GetPostByIdService.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/service/Post/GetPostByIdService.ts">
+      <file name="GetPostByIdService.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\service\Post\GetPostByIdService.ts">
         <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="4" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
       </file>
-      <file name="GetPostByTextService.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/service/Post/GetPostByTextService.ts">
+      <file name="GetPostByTextService.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\service\Post\GetPostByTextService.ts">
         <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="3" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
@@ -536,22 +539,23 @@
         <line num="10" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
       </file>
-      <file name="UpdatePostService.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/service/Post/UpdatePostService.ts">
-        <metrics statements="9" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <file name="UpdatePostService.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\service\Post\UpdatePostService.ts">
+        <metrics statements="10" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="3" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="15" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="16" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="17" count="0" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
       </file>
     </package>
     <package name="postech-fase2-projeto.src.service.User">
       <metrics statements="77" coveredstatements="33" conditionals="17" coveredconditionals="2" methods="13" coveredmethods="8"/>
-      <file name="CreateUserService.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/service/User/CreateUserService.ts">
+      <file name="CreateUserService.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\service\User\CreateUserService.ts">
         <metrics statements="18" coveredstatements="13" conditionals="5" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="3" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
@@ -572,25 +576,25 @@
         <line num="39" count="1" type="stmt"/>
         <line num="40" count="1" type="stmt"/>
       </file>
-      <file name="DeleteUserService.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/service/User/DeleteUserService.ts">
+      <file name="DeleteUserService.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\service\User\DeleteUserService.ts">
         <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="4" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
       </file>
-      <file name="GetAllUsersService.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/service/User/GetAllUsersService.ts">
+      <file name="GetAllUsersService.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\service\User\GetAllUsersService.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="4" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
       </file>
-      <file name="GetUserByIdService.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/service/User/GetUserByIdService.ts">
+      <file name="GetUserByIdService.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\service\User\GetUserByIdService.ts">
         <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="4" count="3" type="stmt"/>
         <line num="6" count="6" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
       </file>
-      <file name="LoginService.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/service/User/LoginService.ts">
+      <file name="LoginService.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\service\User\LoginService.ts">
         <metrics statements="37" coveredstatements="9" conditionals="11" coveredconditionals="2" methods="3" coveredmethods="1"/>
         <line num="2" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
@@ -630,7 +634,7 @@
         <line num="75" count="0" type="stmt"/>
         <line num="76" count="0" type="stmt"/>
       </file>
-      <file name="UpdateUserService.ts" path="/Users/fabioaraujo/Library/CloudStorage/GoogleDrive-fabioaraujo289@gmail.com/Meu Drive/FIAP/2a_fase/postech-fase2-projeto/src/service/User/UpdateUserService.ts">
+      <file name="UpdateUserService.ts" path="C:\Users\Escudero\Documents\Projetos\postech-fase2-projeto\src\service\User\UpdateUserService.ts">
         <metrics statements="13" coveredstatements="4" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="3" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
